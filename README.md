@@ -1,5 +1,5 @@
 # Recipe-Book
-The Recipe Book is here! Discover, create, and organize recipes effortlessly with our stylish and user-friendly platform!  Add and Search for your favorite recipes and locally stored for easy management! 
+The Recipe Book is here! Discover, create, and organize recipes effortlessly with this stylish and user-friendly platform!  Add and Search for your favorite recipes and locally stored for easy management! 
 
 Features :-
 User-Friendly and Visually Appealing Interface.
