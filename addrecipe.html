@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCiPE BooK</title>
+</head>
+<body>
+    <div class="header">
+        <div class="pic">
+            <img src="/images//Recipe.png" alt="recipepic">
+        </div>
+        <div class="title">
+            <h1>ReCiPE BooK</h1>
+            <style>
+                input {
+                    max-width: 400px;
+                }
+            </style>
+        </div>
+    </div>
+    <style>
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    body {
+        background: url('/images//about1.png');
+        background-size: auto;
+        color: #333;
+        backdrop-filter: blur(5px);
+    }
+    .header {
+        background-color: rgba(249, 58, 0, 0); /* semi transparent header background */
+        color: white;
+        text-align: center;
+        padding: 1px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .pic {
+        width: 12px; /* Adjust the picture size as needed */
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    .pic img {
+        width: 140px; /* Adjust the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .title {
+        font-size: 20px; /* Adjust font size as needed */
+        color: #ffffff; /* White color */
+        flex-grow: 0.5;
+        text-align: left; /* Aligning text */
+    }
+    h2 {
+        text-align: center;
+    }
+    .form-section {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 40px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form p {
+        text-align: center;
+    }
+    form p a {
+        text-decoration: none;
+        font-size:larger;
+        color: black;
+    }
+    label {
+        font-weight: bold;
+        margin: 10px 0 5px;
+        display: flex;
+    }
+
+    input, textarea, button {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+    button {
+        background-color: #f93700;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #f93700;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #007BFF;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    .pic {
+        width: 12px;
+        height: auto;
+    }
+    .pic img {
+        width: 140px;
+        height: auto; 
+    }
+    .pic:hover {
+        transform: scale(1.1);
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: white;
+        margin-top: 30px;
+    }
+
+
+    /* Adding a little responsiveness */
+    @media (max-width: 600px) {
+        .form-section {
+            margin: 20px;
+            padding: 15px;
+        }
+
+        input {
+            font-size: 14px;
+        }       
+    }
+</style>
+    <!-- Recipe Form -->
+    <section class="form-section">
+        <h2>Add your Recipe here!</h2>
+        <form id="recipe-form">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" placeholder="Enter recipe name" required>
+    
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" placeholder="Enter ingredients, separated by commas" required></textarea>
+    
+            <label for="steps">Preparation Steps:</label>
+            <textarea id="steps" placeholder="Enter preparation steps" required></textarea>
+    
+            <label for="recipe-image">Upload Image:</label>
+            <input type="file" id="recipe-image" accept="image/*" required>
+    
+            <button type="submit">Add Recipe</button>
+            <p><a href="viewall.html">View all Recipes here</a></p>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 ReCiPE BooK | All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCiPE BooK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: url('/images//about1.png');
+            background-size: auto;
+            color: #333;
+        }
+        .header {
+            background-color: rgba(249, 58, 0, 0); /* semi transparent header background */
+            color: #000;
+            text-align: center;
+            padding: 1px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            
+        }
+        .header h1{
+            text-align: center;
+            color: #000;
+        }
+        .pic {
+            width: 12px;
+            height: auto;
+        }
+        .pic img {
+            width: 140px;
+            height: auto; 
+        }
+        .container {
+            max-width: 900px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        #search {
+            margin-left: 50px 0;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .recipe-card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .recipe-card h3 {
+            margin: 10px 0;
+            color: #f93700;
+        }
+
+        .recipe-card p {
+            margin: 5px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f93700;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e02e00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="pic">
+            <img src="/images//Recipe.png" alt="recipepic">
+        </div>
+    <div class="title">
+        <h1>ReCiPE BooK</h1>
+        <style>
+            input {
+                max-width: 400px;
+            }
+        </style>
+    </div>
+    
+    <div class="container">
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search Recipes by Name or Ingredients">
+        <h1>All Recipes</h1>
+        <div id="recipe-container">
+            <!-- Recipes will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="viewall.js"></script>
+</body>
+</html>

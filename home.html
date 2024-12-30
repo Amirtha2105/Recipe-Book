@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCiPE BooK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Title and logo for Recipe Book-->
+    <div class="header">
+        <div class="pic">
+            <img src="/images//Recipe.png" alt="recipepic">
+        </div>
+        <div class="title">
+            <h1>ReCiPE BooK</h1>
+            <style>
+                input {
+                    max-width: 400px;
+                }
+            </style>
+        </div>
+    <!--Navigation Bar containing About, Add Recipes and for Viewing all Recipes-->
+    <div class="navbar">
+        <div class="menu right-menu">
+            <a href="about.html" class="menu-item">About</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="addrecipe.html" class="menu-item">Add Recipes</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="viewall.html" class="menu-item">View All</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <br><br>
+    <h2>Yayy Recipes</h2>
+    <p>-----------------------------------------------</p>
+    <p>This site is accessible to everyone who wants to share their recipes or view for more delicious foods!<br>Enjoy!</p>
+    <!-- Dynamic Carousel of images -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="/images//recipe7.png" alt="Recipe 7">
+            <img src="/images/recipe2.png" alt="Recipe 2">
+            <img src="/images/recipe3.png" alt="Recipe 3">
+            <img src="/images/recipe6.png" alt="Recipe 6">
+            <img src="/images/recipe8.png" alt="Recipe 8">
+            <img src="/images/recipe4.png" alt="Recipe 4">
+            <img src="/images/recipe1.png" alt="Recipe 1">
+            <img src="/images/recipe5.png" alt="Recipe 5">
+            
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 ReCiPE BooK | All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
