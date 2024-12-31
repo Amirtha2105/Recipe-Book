@@ -37,5 +37,3 @@ CSS3: Styling and responsive design.
 
 JavaScript: Interactive functionality and local storage.
 
-Designed and developed with ❤️ by Amirthaa.
-
